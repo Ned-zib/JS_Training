@@ -1,0 +1,25 @@
+<body>
+    <div id="form">
+        <input type="text" placeholder="text1" />
+        <input type="text" placeholder="text2" />
+    </div>
+</body>
+
+<script>
+
+    let myform = document.getElementById("form");
+
+    //focus is when you clic and maintain the "atention" on the element
+    myform.addEventListener("focus", onFocus, true);
+    //blur when you go to a different elements
+    myform.addEventListener("blur", onBlur, true);
+
+    function onFocus( e ) {
+        e.target.style.background = "lightblue";
+    }
+
+    function onBlur( e ) {
+        e.target.style.background = "white";
+    }
+
+</script>

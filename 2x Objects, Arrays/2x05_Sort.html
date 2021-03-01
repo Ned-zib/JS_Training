@@ -1,0 +1,18 @@
+<script>
+    /*SORT*/
+    var numbers = [3, 342, 23, 22, 124];
+    //This method sort the array in this case in a desceding value
+    numbers.sort(function (a, b) { return b - a });
+    console.log("Descending sort " + numbers);
+    //for an asceding value needs to be a-b
+    numbers.sort(function (a, b) { return a - b });
+    console.log("Descending sort " + numbers);
+    //Sorting by a property
+    var library = [
+        { author: 'Bill Gates', title: 'The Road Ahead', libraryID: 1254 },
+        { author: 'Steve Jobs', title: 'Walter Isaacson', libraryID: 4264 },
+        { author: 'Suzanne Collins', title: 'Mockingjay: The Final Book of The Hunger Games', libraryID: 3245 }
+    ];
+    library = library.sort((a, b) => (a.title > b.title) ? 1 : -1)
+    console.log(library);
+</script>

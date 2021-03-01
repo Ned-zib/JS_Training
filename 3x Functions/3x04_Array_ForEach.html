@@ -1,0 +1,13 @@
+<script>
+    var myArray = [10, 20, "Hello"];
+
+    var myFunction = function (item) {
+        console.log("For an element "+item);
+    }
+    //For each iterate over the array
+    myArray.forEach(myFunction);
+    //A second ex.
+    myArray.forEach(function(item, index, array){
+        console.log(item, index);
+    });
+</script>

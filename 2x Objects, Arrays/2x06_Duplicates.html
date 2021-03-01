@@ -1,0 +1,14 @@
+<script>
+    /*REMOVING DUPLICATES*/
+    /*ALSO WE CAN USE A CHARSET TO REMOVE DUPLICATE VALUES*/
+    var numbers = [1, 2, 2, 3, 1, 5, 4, 8, 6];
+    numbers = [...new Set(numbers)];
+    console.log("Charset "+numbers);
+
+    /*OR USING A FILTER WITH*/
+    var numbers = [1, 2, 2, 3, 1, 5, 4, 8, 6];
+    numbers = numbers.filter((c, index) => {
+        return numbers.indexOf(c) === index;
+    });
+    console.log("Filter "+numbers);
+</script>

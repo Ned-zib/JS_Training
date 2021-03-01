@@ -1,0 +1,20 @@
+<body>
+    <p id="par">This is the initial message</p>
+    <p id="par">This is the initial message</p>
+    <p id="par">This is the initial message</p>
+    <p id="par">This is the initial message</p>
+
+    <button onclick="changeStyle()">Clic me</button>
+</body>
+
+<script>
+    //allow us to grab all the p tags in an arrayfor ex.
+    function changeStyle() {
+        var p = document.getElementsByTagName("p");
+        //we can iterate over the array to change the style to
+        //all existing, in this case, p elements
+        for (let i = 0; i < p.length; i++) {
+            var changeParaText = p[i].style.fontStyle = "italic";
+        }
+    }
+</script>

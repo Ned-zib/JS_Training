@@ -1,0 +1,16 @@
+<script>
+    /*
+    Scope reffers if the variable can be accessed
+    there are to scopes Local and Global
+    in the next example name1 is a global variable
+    and name 2 is local
+    */
+    var name1 = "ben";
+    myFunction();
+    function myFunction() {
+        var name2 = "bob";
+        console.log(name1);
+        console.log(name2);
+    }
+    console.log(name2);
+</script>

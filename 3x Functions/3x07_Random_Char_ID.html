@@ -1,0 +1,26 @@
+<html>
+
+<body>
+    <div>
+        Enter the length of character:
+        <input type='text' id="num">
+        <button onclick="stringGen()">submit</button>
+    </div>
+</body>
+
+</html>
+
+<script>
+    function stringGen() {
+        var chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+        var result = "";
+
+        var x = document.getElementById("num").value;
+
+        for (var i = 0; i < x; i++)
+            result += chars.charAt(Math.floor(Math.random() * chars.length));
+
+        alert(result);
+        return result;
+    }
+</script>

@@ -1,0 +1,21 @@
+<script>
+    /*
+    Closure
+    A Closure is nothing but a function inside another function.
+    This closure function can access the variables inside its 
+    own scope, the outer function's variables and the global variables.
+    Example
+    In this example, whenever we call the myClosure function the value 
+    of i will be increased by one. i will be set to zero only once and 
+    only the inner function will be called everytime when myClosure is 
+    called*/
+
+    var myClosure = (function () {
+        var i = 0;
+        return function () { return i += 1; }
+    })();
+    myClosure();//i=1
+    myClosure();//i=2
+    myClosure();//i=3
+    
+</script>

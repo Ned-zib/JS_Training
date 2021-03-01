@@ -1,0 +1,14 @@
+<body>
+    <p id="par">This is the initial message</p>
+
+    <button onclick="changeStyle()">Clic me</button>
+</body>
+
+<script>
+    function changeStyle() {
+        var text = document.getElementById("par").style;
+        text.color = "blue";
+        text.backgroundColor = "red";
+        text.fontStyle = "italic";
+    }
+</script>

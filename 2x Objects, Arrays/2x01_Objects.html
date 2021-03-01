@@ -1,0 +1,26 @@
+<script>
+    /* WE CAN CREATE OBJECTS USING 3 DIFFERENT WAYS */
+    //By using the keyword 'new'
+    var car = new Object();
+    //This is known as Object literal
+    var student = {
+        "Name": "Ben",
+        "age": 20
+    };
+    //You can create also empty objects
+    var empty = {};
+
+    //Then we can add properties to it
+    car.model = 'Ford';
+    empty.square = 50;
+
+    //Then we can use the object.property to retrieve the value
+    console.log(car.model);
+
+    /* WE CAN ALSO HAVE NESTED OBJECTS */
+    // degree is inside of student but is also an object
+    var student = { Name:"Ben",  age:20 , degree: {class:"B.Tech",section:"A"}};
+    //can be accessed in this way
+    console.log(student.degree.class);
+    
+</script>

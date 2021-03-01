@@ -1,0 +1,25 @@
+<HEAD>
+    <TITLE> Country field</TITLE>
+
+</HEAD>
+
+<BODY>
+    Country:
+    <SELECT NAME="list" ID="list">
+        <OPTION>India</OPTION>
+        <OPTION>China</OPTION>
+    </SELECT>
+    <input type="text" id="txtbox">
+    <INPUT TYPE="button" NAME="button" VALUE="Add New" onClick="runList()" />
+    <script type="text/javascript" src="app/index.js"></SCRIPT>
+</BODY>
+
+<script>
+    function runList() {
+        var parent = document.createElement("OPTION");
+        var userInput = document.getElementById("txtbox");
+        var child = document.createTextNode(userInput.value);
+        parent.appendChild(child);
+        document.getElementById("list").appendChild(parent);
+    }
+</script>

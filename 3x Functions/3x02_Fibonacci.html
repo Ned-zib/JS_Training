@@ -1,0 +1,15 @@
+<script>
+    function fibonacciSequence(input) {
+        var myArray = [0, 1];
+        var prev1 = 0;
+        var prev2 = 0;
+        for (var i = 2; i <= input; i++) {
+            prev1 = myArray[i - 1];
+            prev2 = myArray[i - 2];
+            myArray[i] = prev1 + prev2;
+
+        }
+        return myArray;
+    }
+    console.log(fibonacciSequence(7));
+</script>

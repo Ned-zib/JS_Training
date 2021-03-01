@@ -1,0 +1,17 @@
+<body id="body">
+    <p id="par1">This is the initial message</p>
+    <p id="par2">This message will be removed</p>
+    <p id="par3">This is the initial message</p>
+    <p id="par4">This is the initial message</p>
+
+    <button onclick="removeElement()">Clic me</button>
+</body>
+
+<script>
+    function removeElement() {
+        var b = document.getElementById("body");
+        var p = document.getElementById("par2");
+
+        b.removeChild(p);
+    }
+</script>

@@ -1,0 +1,33 @@
+<script>
+
+    var line = "";
+
+    console.log("**********");
+    for (var i = 0; i < 8; i++) {
+        line = "*";
+        if (i % 2 == 0) {
+            line = line + "-+-+-+-+";
+        }
+        else {
+            line = line + "+-+-+-+-";
+        }
+        line = line + "*";
+        console.log(line);
+        line = "";
+    }
+    console.log("**********");
+
+</script>
+
+<!-- Output console Chess table
+**********
+*-+-+-+-+*
+*+-+-+-+-*
+*-+-+-+-+*
+*+-+-+-+-*
+*-+-+-+-+*
+*+-+-+-+-*
+*-+-+-+-+*
+*+-+-+-+-*
+**********
+-->
